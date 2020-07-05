@@ -4,6 +4,8 @@
 
 This package helps to upload files with [Vulcan.js](http://vulcanjs.org/) applications. Including a dropzone.
 
+Note that the server-side policy is currently permissive and any file-type is allowed for the duration of the expiration time.
+
 **/!\ This is an experimental package**.
 
 ## Example
@@ -13,6 +15,7 @@ Add the following to your `settings.json`:
   "awsAccessKey": "<key>",
   "awsSecretKey": "<key>",
   "awsS3BucketName": "<bucket-name>"
+  "expirationInMinutes": 15
 },
 ```
 Inside your public section in `settings.json` add the following:
@@ -30,5 +33,5 @@ Best way to contribute is to use it in your own app, and propose ideas, suggesti
 
 We seek for maximum reusability, so each method should be as configurable as possible, and split into independent functions whenever possible.
 
-*[Built with love by Arctop](https://github.com/arctop)*
+*[Contributed by Arctop](https://arctop.com)*
 
